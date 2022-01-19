@@ -12,7 +12,7 @@
 int main() {
 
     elev_pregatiri e1{"Bora Dragos","clasa a 10 a","bucuresti grozavesti caminA","0987654321","10.12.2022","2h"};
-    elev_pregatiri e2{"Mike Oxlong","clasa a 11 a","bucuresti grozavesti caminC","0789654321","11.12.2022","2h"};
+    elev_pregatiri e2{"Alexandru Mihai","clasa a 11 a","bucuresti grozavesti caminC","0789654321","11.12.2022","2h"};
     elev_pregatiri e3{"Iustinian al 2 lea","clasa a 12 a","bucuresti grozavesti caminD","0897654321","12.12.2022","2h"};
     elev_erasmus e4{"Maria Antoaneta","clasa a 11 a","bucuresti grozavesti camin A1","1234567899","Franta","Anglia"};
 
