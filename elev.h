@@ -9,6 +9,7 @@
 #include <string>
 #include <vector>
 #include <memory>
+#include "exceptii.h"
 
 
 
@@ -17,11 +18,11 @@ protected:
     std::string nume;
     std::string clasa;
     std::string adresa;
-    std::string nr_telefon;
+    long int nr_telefon;
     std::vector<int> note_elev;
 
 public:
-    elev(const std::string &nume, const std::string &clasa, const std::string &adresa, const std::string &nrTelefon);
+    elev(const std::string &nume, const std::string &clasa, const std::string &adresa, const long int &nrTelefon);
 
     friend std::ostream &operator<<(std::ostream &os, const elev &elev);
 

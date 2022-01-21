@@ -8,14 +8,15 @@
 #include <string>
 #include <memory>
 #include "elev.h"
+#include "exceptii.h"
 
 class elev_pregatiri : public elev {
 private:
     std::string data_preg;
-    std::string durata_preg;
+    int durata_preg;
 public:
     elev_pregatiri(const std::string &nume, const std::string &clasa, const std::string &adresa,
-                   const std::string &nrTelefon, const std::string &dataPreg, const std::string &durataPreg);
+                   const long int &nrTelefon, const std::string &dataPreg, const int &durataPreg);
 
     void afisare(std::ostream &os) const override;
 

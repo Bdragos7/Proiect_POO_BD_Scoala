@@ -17,7 +17,7 @@ private:
 public:
 
     elev_olimpic(const std::string &nume, const std::string &clasa, const std::string &adresa,
-                 const std::string &nrTelefon, const std::string &olimpiada, const std::string &premiu);
+                 const long int &nrTelefon, const std::string &olimpiada, const std::string &premiu);
 
     void afisare (std::ostream &os) const override;
 

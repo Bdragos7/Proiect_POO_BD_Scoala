@@ -8,15 +8,24 @@
 #include <iostream>
 #include <string>
 
+
+template <typename T>
+class examene;
+
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const examene<T> &examene);
+
+template<typename T>
 class examene {
 private:
     std::string nume;
-    int nota_trecere;
+    T nota_trecere;
     std::string data_examen;
 public:
-    examene(const std::string &nume, int notaTrecere, const std::string &dataExamen);
+    examene(const std::string &nume, T notaTrecere, const std::string &dataExamen);
 
-    friend std::ostream &operator<<(std::ostream &os, const examene &examene);
+    friend std::ostream &operator<< <>(std::ostream &, const examene<T>&);
+
 
 };
 

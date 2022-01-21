@@ -4,11 +4,12 @@
 
 #include "examene.h"
 
-examene::examene(const std::string &nume, int notaTrecere, const std::string &dataExamen) : nume(nume),
+template<typename T>
+examene<T>::examene(const std::string &nume, T notaTrecere, const std::string &dataExamen) : nume(nume),
                                                                                             nota_trecere(notaTrecere),
                                                                                             data_examen(dataExamen) {}
-
-std::ostream &operator<<(std::ostream &os, const examene &examene) {
+template<typename T>
+std::ostream &operator<<(std::ostream &os, const examene<T> &examene) {
     os << "nume: " << examene.nume << " nota_trecere: " << examene.nota_trecere << " data_examen: "
        << examene.data_examen;
     return os;

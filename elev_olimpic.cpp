@@ -5,7 +5,7 @@
 #include "elev_olimpic.h"
 
 elev_olimpic::elev_olimpic(const std::string &nume, const std::string &clasa, const std::string &adresa,
-                           const std::string &nrTelefon, const std::string &olimpiada, const std::string &premiu)
+                           const long int &nrTelefon, const std::string &olimpiada, const std::string &premiu)
         : elev(nume, clasa, adresa, nrTelefon), olimpiada(olimpiada), premiu(premiu) {}
 
 void elev_olimpic::afisare(std::ostream &os) const {

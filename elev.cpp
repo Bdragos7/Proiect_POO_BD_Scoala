@@ -9,8 +9,12 @@ std::ostream &operator<<(std::ostream &os, const elev &elev) {
     return os;
 }
 
-elev::elev(const std::string &nume, const std::string &clasa, const std::string &adresa, const std::string &nrTelefon)
-        : nume(nume), clasa(clasa), adresa(adresa), nr_telefon(nrTelefon) {}
+elev::elev(const std::string &nume, const std::string &clasa, const std::string &adresa, const long int &nrTelefon)
+        : nume(nume), clasa(clasa), adresa(adresa), nr_telefon(nrTelefon) {
+
+    if(nr_telefon<9999999999)
+        throw telefon();
+}
 
 const std::string &elev::getNume() const {
     return nume;

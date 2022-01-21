@@ -4,10 +4,13 @@
 
 #include "elev_pregatiri.h"
 
+
 elev_pregatiri::elev_pregatiri(const std::string &nume, const std::string &clasa, const std::string &adresa,
-                               const std::string &nrTelefon, const std::string &dataPreg, const std::string &durataPreg) : elev(nume, clasa, adresa,
-                                                                                                 nrTelefon),
-                                                                                            data_preg(dataPreg),durata_preg() {}
+                               const long int &nrTelefon, const std::string &dataPreg, const int &durataPreg) : elev(nume, clasa, adresa,
+                                                                                                 nrTelefon),data_preg(dataPreg),durata_preg() {
+    if(durata_preg>2)
+        throw durata();
+}
 
 void elev_pregatiri::afisare(std::ostream &os) const {
     elev_pregatiri::afisare(os);

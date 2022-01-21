@@ -5,7 +5,7 @@
 #include "elev_erasmus.h"
 
 elev_erasmus::elev_erasmus(const std::string &nume, const std::string &clasa, const std::string &adresa,
-                           const std::string &nrTelefon, const std::string &nationalitate,
+                           const long int &nrTelefon, const std::string &nationalitate,
                            const std::string &taraProvenienta) : elev(nume, clasa, adresa, nrTelefon),
                                                                  nationalitate(nationalitate),
                                                                  tara_provenienta(taraProvenienta) {}

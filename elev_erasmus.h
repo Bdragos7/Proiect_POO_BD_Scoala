@@ -17,7 +17,7 @@ private:
     std::string tara_provenienta;//tara de unde este scoala din care se face schimbul
 public:
     elev_erasmus(const std::string &nume, const std::string &clasa, const std::string &adresa,
-                 const std::string &nrTelefon, const std::string &nationalitate, const std::string &taraProvenienta);
+                 const long int &nrTelefon, const std::string &nationalitate, const std::string &taraProvenienta);
 
     void afisare(std::ostream &os) const override;
 
