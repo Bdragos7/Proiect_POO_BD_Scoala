@@ -2,13 +2,13 @@
 // Created by Dragos on 1/21/2022.
 //
 
-#include "examene.cpp"
+#include "examen.cpp"
 
-template class examene<int>;
-template class examene<double>;
-
-template
-std::ostream& operator << <>(std::ostream& os, const examene<int>& x);
+template class examen<int>;
+template class examen<double>;
 
 template
-std::ostream& operator << <>(std::ostream& os, const examene<double>& x);
+std::ostream& operator << <>(std::ostream& os, const examen<int>& x);
+
+template
+std::ostream& operator << <>(std::ostream& os, const examen<double>& x);
