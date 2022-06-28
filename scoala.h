@@ -8,9 +8,7 @@
 #include<iostream>
 #include <string>
 #include <algorithm>
-#include "elev_pregatire.h"
-#include "elev_erasmus.h"
-#include "elev_olimpic.h"
+#include "elev_pregatiri.h"
 #include <memory>
 
 
@@ -19,10 +17,7 @@ private:
 
     std::string nume;
     std::string director;
-    std::vector<elev_pregatire> elev_p;
-    std::vector<elev_erasmus> elev_e;
-    std::vector<elev_olimpic>elev_o;
-
+    std::vector<elev_pregatiri> elevi;
 
 public:
     scoala(const std::string &nume, const std::string &director);
@@ -33,26 +28,14 @@ public:
 
     friend std::ostream &operator<<(std::ostream &os, const scoala &scoala);
 
-    void alfabetic_p ();
-    void alfabetic_e ();
-    void alfabetic_o ();
+    void alfabetic ();
 
-    void adaug(elev_pregatire elevPregatire){
-        elev_p.push_back(elevPregatire);
+    void adaug(elev_pregatiri elev_pregatiri){
+        elevi.push_back(elev_pregatiri);
     }
 
-    void adaug_erasmus(elev_erasmus elevErasmus) {
-        elev_e.push_back(elevErasmus);
-    }
-
-    void adaug_olimpic(elev_olimpic elevOlimpic) {
-        elev_o.push_back(elevOlimpic);
-    }
-
-    void afisare_p (std::ostream &os);
-    void afisare_e (std::ostream &os);
-    void afisare_o (std::ostream &os);
-    virtual ~scoala() ;
+    void afisare (std::ostream &os);
+    virtual ~scoala();
 };
 
 

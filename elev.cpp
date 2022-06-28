@@ -12,8 +12,8 @@ std::ostream &operator<<(std::ostream &os, const elev &elev) {
 elev::elev(const std::string &nume, const std::string &clasa, const std::string &adresa, const long int &nrTelefon)
         : nume(nume), clasa(clasa), adresa(adresa), nr_telefon(nrTelefon) {
 
-    if(nr_telefon >= 9999999999)
-        throw telefon_error();
+    if(nr_telefon<9999999999)
+        throw telefon();
 }
 
 const std::string &elev::getNume() const {

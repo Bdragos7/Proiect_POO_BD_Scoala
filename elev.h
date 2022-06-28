@@ -9,18 +9,18 @@
 #include <string>
 #include <vector>
 #include <memory>
-#include "exceptie.h"
+#include "exceptii.h"
 
 
 
 class elev {
 protected:
+    std::string nume;
     std::string clasa;
     std::string adresa;
     long int nr_telefon;
     std::vector<int> note_elev;
 
-    std::string nume;
 public:
     elev(const std::string &nume, const std::string &clasa, const std::string &adresa, const long int &nrTelefon);
 
